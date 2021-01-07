@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes everywhere!</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+
+            font-family: 'Lato', sans-serif;
+            /*legge inn fonten der man ønsker å bruke den */
+
+            /* slik legger man til kommentar i css */
+
+            display: flex;
+            /* flex brukes til å plassere innholde */
+
+            flex-wrap: wrap;
+            /* flex-wrap brukes til å pakke innholdet der hvor det er
+            plass dyttes ting opp og der det ikke er plass dyttes ting ned */
+
+            justify-content: center;
+
+            align-content: center;
+            /* brukes for å sentrere innhold */
+
+
+            margin: 40px;
+            padding: 20px;
+
+            background-color: darkcyan;
+            /*holde over firkanten for å spesifisere farge. eller bruke 
+            # for å skrive inn egen farge. Det går fra 000000 som er svart,
+            til ffffff som er hvit. */
+
+            min-height: 1000px;
+        }
+
+        div {
+            max-width: 300px;
+            min-width: 300px;
+            margin: 60px;
+            padding: 80px;
+            text-align: center;
+
+            border: lightseagreen solid 10px;
+
+            background-color: lightcyan;
+        }
+
+
+        .overskrift {
+            min-width: 900px;
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="overskrift">
+            <h1>CSS School</h1>
+            <p>Kort info om det viktigste hovedtingene.
+            </p>
+        </div>
+
+        <div>
+            <h2>Padding</h2>
+            <p>Innholdet i en boks hvor tekst og bilder er synlig.
+            </p>
+            <a href="https://www.w3schools.com/css/css_padding.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Margin</h2>
+            <p>Lager luft på utsiden av border. Margin er transparent.
+            </p>
+            <a href="https://www.w3schools.com/css/css_margin.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Border</h2>
+            <p>En grense som går rundt padding og content.
+            </p>
+            <a href="https://www.w3schools.com/css/css_border.asp">kilde</a>
+        </div>
+
+        <div>
+            <h2>Generell forklaring på boksmodellen</h2>
+            <p>Boksmodellen I CSS er en boks rundt hver HTML element.
+                Den inneholder margins, borders, padding, and the actual content.
+                Bildet under illustrerer boksmodellen.
+            </p>
+            <a href="(https://www.w3schools.com/css/css_boxmodel.asp)">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Selector</h2>
+            <p>Selector er kodene man skriver innfor å velge hvilke
+                elementer man ønsker å designe eller spesifisere.
+            </p>
+            <a href="https://www.w3schools.com/cssref/css_selectors.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Attribute</h2>
+            <p>CSS Attribute selector brukes til å velge et element
+                med en spesifikk egenskap eller for å tillegge en verdi.
+                Det er en god måte å style HTML-elementer ved å gruppere de
+                basert på spesifikke attributes.
+            </p>
+            <a href="https://www.geeksforgeeks.org/css-attribute-selector/">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Value</h2>
+            <p>Values er en del av Css reglene til CSS.
+                Tillater bruk av tall, lengder, prosent, URLs, “Counters”, og farger.
+            </p>
+            <a href="https://www.w3resource.com/css/CSS-values.php">Kilde</a>
+        </div>
+
+        <div>
+            <h2>p tagg</h2>
+            <p>står for paragraph og brukes oftest til mengdeteksten.
+                Her kan man skrive generell tekst.
+            </p>
+            <a href="https://www.w3schools.com/tags/tag_p.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>h1 tagg</h2>
+            <p>Største overskrift
+            </p>
+            <a href="https://www.w3schools.com/tags/tag_hn.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Kommentar i HTMl</h2>
+            <p> Fyller inn: (krokkodille tegn) !- - "tekst" - - (krokkodille tegn)
+            </p>
+            <a href="https://www.w3schools.com/html/html_comments.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Kommentar i CSS</h2>
+            <p>/* "tekst" */
+            </p>
+            <a href="https://www.w3schools.com/css/css_comments.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Skrive lenker</h2>
+            <p> (krokkodille tegn) a href=""(krokodille tegn)(krokkodille tegn)/a(krokodille tegn)
+            </p>
+            <a href="https://www.w3schools.com/html/html_links.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Legge inn bilder</h2>
+            <p>img og trykk enter.
+                Bildet du skal legge inn må ligge i samme mappe som html-dokumentet ditt
+                Skriv inn filnavnet i img src="filnavn her",
+                alt=”” er hva som vil stå hvis bildet ikke laster inn
+            </p>
+            <a href="https://www.w3schools.com/html/html_images.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Bakgrunnsfarge</h2>
+            <p>Skriv: background-color: og så kommer det forslag til fargevalg.
+            </p>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Main i HTML</h2>
+            <p>Største overskrift
+            </p>
+            <a href="https://www.w3schools.com/tags/tag_main.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Farge med hex verdier</h2>
+            <p>Velg hva du vil farge med f.eks background-color:
+                Skriv # og 3-6 tall med verdien 0-9, eller bokstavene a-f.
+                0 er mørkest og f er lysest
+                f.eks: #ffffff (hvit), #000000 (svart)
+            </p>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Farge med RGB verdier</h2>
+            <p>Skriv rgb(96, 168, 168)
+                (verdien til fargen i parantes)
+            </p>
+            <a href="https://www.w3schools.com/colors/colors_rgb.asp">Kilde</a>
+        </div>
+
+        <div>
+            <h2>Flexbox i CSS</h2>
+            <p>Flexbox gjør det lettere å designe layout på nettsiden.
+                Mer effektiv måte å plassere “Align” osv.
+                Funker bra selv om størrelser er ukjente og/eller dynamisk.
+            </p>
+            <a href="https://www.w3schools.com/css/css3_flexbox.asp">Kilde</a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
